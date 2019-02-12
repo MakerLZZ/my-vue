@@ -1,2 +1,2 @@
-# MyVue
+# my-vue
 vue api demo
