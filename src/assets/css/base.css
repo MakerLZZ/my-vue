@@ -1,7 +1,88 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  min-width: 1200px;
+  color: #232323;
+  overflow: hidden;
+  height: 100%;
+  max-height: 100%;
+}
+
+html,
+body,
+div,
+form,
+p,
+ul,
+li,
+span,
+label,
+img,
+input,
+ol,
+strong,
+textarea,
+i,
+a,
+header,
+footer,
+em,
+pre,
+select,
+option,
+nav,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  position: relative;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
 .icon {
-    width: 1em;
-    height: 1em;
-    vertical-align: -0.15em;
-    fill: currentColor;
-    overflow: hidden;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
 }
