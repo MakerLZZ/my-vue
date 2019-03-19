@@ -13,33 +13,18 @@
                         <li><a
                                 class="section-link"
                                 data-scroll=""
-                                href="#data"
-                            >data</a></li>
+                                href="#data-基础用法"
+                            >基础用法</a></li>
+                        <!-- <li><a
+                                class="section-link"
+                                data-scroll=""
+                                href="#data-进阶用法"
+                            >进阶用法</a></li>
                         <li><a
                                 class="section-link"
                                 data-scroll=""
-                                href="#props"
-                            >props</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#propsData"
-                            >propsData</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#computed"
-                            >computed</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#methods"
-                            >methods</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#watch"
-                            >watch</a></li>
+                                href="#data-特殊案例"
+                            >特殊案例</a></li> -->
                     </ul>
                     <li><a
                             class="section-link"
