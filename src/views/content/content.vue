@@ -1,12 +1,16 @@
 <template>
     <div
-        class="content"
+        class="content api with-sidebar"
         ref="content"
     >
         <h1>API</h1>
+        <Project />
         <Data />
         <Dom />
         <Lifecycle />
+        <Ins />
+        <Router />
+        <Vuex />
     </div>
 </template>
 
@@ -15,11 +19,19 @@ import './content.css';
 import Data from '../demo/data';
 import Dom from '../demo/dom';
 import Lifecycle from '../demo/lifecycle';
+import Ins from '../demo/ins';
+import Router from '../demo/router';
+import Vuex from '../demo/vuex';
+import Project from '../demo/project';
 export default {
     components: {
         Data,
         Dom,
-        Lifecycle
+        Lifecycle,
+        Ins,
+        Router,
+        Vuex,
+        Project
     },
     data() {
         return {

@@ -4,6 +4,13 @@
             <div class="list">
                 <h2>API</h2>
                 <ul class="menu-root">
+                    <li>
+                        <a
+                            class="section-link"
+                            data-scroll=""
+                            href="#项目搭建"
+                        >项目搭建</a>
+                    </li>
                     <li><a
                             class="section-link"
                             data-scroll=""
@@ -62,58 +69,18 @@
                         <li><a
                                 class="section-link"
                                 data-scroll=""
-                                href="#beforeCreate"
-                            >beforeCreate</a></li>
+                                href="#create-mount"
+                            >create-mount</a></li>
                         <li><a
                                 class="section-link"
                                 data-scroll=""
-                                href="#created"
-                            >created</a></li>
+                                href="#update"
+                            >update</a></li>
                         <li><a
                                 class="section-link"
                                 data-scroll=""
-                                href="#beforeMount"
-                            >beforeMount</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#mounted"
-                            >mounted</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#beforeUpdate"
-                            >beforeUpdate</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#updated"
-                            >updated</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#activated"
-                            >activated</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#deactivated"
-                            >deactivated</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#beforeDestroy"
-                            >beforeDestroy</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#destroyed"
-                            >destroyed</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#errorCaptured"
-                            >errorCaptured</a></li>
+                                href="#destroy"
+                            >destroy</a></li>
                     </ul>
                     <li><a
                             class="section-link"
@@ -124,73 +91,37 @@
                         <li><a
                                 class="section-link"
                                 data-scroll=""
-                                href="#v-text"
-                            >v-text</a></li>
+                                href="#v-focus"
+                            >v-focus</a></li>
+                    </ul>
+                    <li><a
+                            class="section-link"
+                            data-scroll=""
+                            href="#路由"
+                        >路由</a></li>
+                    <ul class="menu-sub">
                         <li><a
                                 class="section-link"
                                 data-scroll=""
-                                href="#v-html"
-                            >v-html</a></li>
+                                href="#router-基础用法"
+                            >基础用法</a></li>
                         <li><a
                                 class="section-link"
                                 data-scroll=""
-                                href="#v-show"
-                            >v-show</a></li>
+                                href="#路由懒加载"
+                            >路由懒加载</a></li>
+                    </ul>
+                    <li><a
+                            class="section-link"
+                            data-scroll=""
+                            href="#状态管理"
+                        >状态管理</a></li>
+                    <ul class="menu-sub">
                         <li><a
                                 class="section-link"
                                 data-scroll=""
-                                href="#v-if"
-                            >v-if</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#v-else"
-                            >v-else</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#v-else-if"
-                            >v-else-if</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#v-for"
-                            >v-for</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#v-on"
-                            >v-on</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#v-bind"
-                            >v-bind</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#v-model"
-                            >v-model</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#v-slot"
-                            >v-slot</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#v-pre"
-                            >v-pre</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#v-cloak"
-                            >v-cloak</a></li>
-                        <li><a
-                                class="section-link"
-                                data-scroll=""
-                                href="#v-once"
-                            >v-once</a></li>
+                                href="#购物车案例"
+                            >购物车案例</a></li>
                     </ul>
                 </ul>
             </div>
@@ -206,6 +137,7 @@
     top: 61px;
     left: 0;
     bottom: 0;
+    border-right: 1px solid #e9e9e9;
     overflow-x: hidden;
     overflow-y: auto;
 
