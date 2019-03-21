@@ -34,9 +34,6 @@
                 data-scroll=""
             >create/mount</a></h3>
         <ul>
-            <!-- `&nbsp;&nbsp;&nbsp;&nbsp;\n` + 
-                `\t\n` +
-                `&nbsp;&nbsp;&nbsp;&nbsp;},\n` +  -->
             <li>
                 <p><strong>示例：</strong></p>
                 <pre><code class="hljs js">{{

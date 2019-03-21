@@ -1,21 +1,19 @@
 import Vue from 'vue';
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-import App from './App';
-import router from './router';
-import store from './store/index';
-import { currency } from './lib/currency';
+import router from './router'; // 路由
+import store from './store/index'; // 状态管理
+
+import ElementUI from 'element-ui'; // element-ui
+import 'element-ui/lib/theme-chalk/index.css'; // element-ui 样式
+Vue.use(ElementUI); // 引用element
 
 import '../src/assets/css/base.css'; // 初始化样式
-import './assets/scss/index.scss'; // 初始化引入 scss
-import '../src/assets/icon/iconfont'; // 引入svg iconfont js 
-import './assets/icon/iconfont.css'; // 引入 iconfont.css
-Vue.config.productionTip = false;
 
-Vue.use(ElementUI);
-Vue.filter('currency', currency);
+import { currency } from './lib/currency'; // 过滤器的引用
+Vue.filter('currency', currency); // 过滤器 处理货币小数问题
 
-/* eslint-disable no-new */
+Vue.config.productionTip = false; // 阻止显示启动信息
+
+import App from './App';
 new Vue({
     el: '#app',
     router,

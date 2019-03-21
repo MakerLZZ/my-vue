@@ -22,13 +22,13 @@
 import { mapState, mapActions } from 'vuex';
 export default {
     computed: mapState({
-        products: state => state.products.all
+        products: state => state.products.all // 获取商品列表
     }),
     methods: mapActions('cart', [
         'addProductToCart'
     ]),
     created () {
-        this.$store.dispatch('products/getAllProducts');
+        this.$store.dispatch('products/getAllProducts'); // 调用action获取商品列表 初始化时
     }
 };
 </script>
