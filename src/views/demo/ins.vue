@@ -54,27 +54,6 @@
                 `}`}}</code></pre>
                 <pre><code class="hljs html">&#60;p&#62;&#60;input v-focus /&#62;&#60;/p&#62;</code></pre>
             </li>
-            <li>
-                <p><strong>结果：</strong></p>
-                <p><input
-                        v-focus
-                        placeholder="我将在页面挂载时选中"
-                    /></p>
-            </li>
         </ul>
     </div>
 </template>
-
-<script>
-export default {
-    directives: {
-        focus: {
-            // 指令的定义
-            inserted(el) {
-                el.focus();
-            }
-        }
-    }
-};
-</script>
-
