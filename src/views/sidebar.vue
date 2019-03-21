@@ -1,8 +1,8 @@
 <template>
-    <div class="sidebar">
-        <div class="sidebar-box">
+    <div>
+        <div class="sidebar-inner">
             <div class="list">
-                <h2>API</h2>
+                <h2>API +</h2>
                 <ul class="menu-root">
                     <li>
                         <a
@@ -11,6 +11,23 @@
                             href="#项目搭建"
                         >项目搭建</a>
                     </li>
+                    <ul class="menu-sub">
+                        <li><a
+                                class="section-link"
+                                data-scroll=""
+                                href="#project-ready"
+                            >项目准备</a></li>
+                        <li><a
+                                class="section-link"
+                                data-scroll=""
+                                href="#project-create"
+                            >构建项目</a></li>
+                        <li><a
+                                class="section-link"
+                                data-scroll=""
+                                href="#project-list"
+                            >项目目录</a></li>
+                    </ul>
                     <li><a
                             class="section-link"
                             data-scroll=""
@@ -85,6 +102,18 @@
                     <li><a
                             class="section-link"
                             data-scroll=""
+                            href="#组件"
+                        >组件</a></li>
+                    <ul class="menu-sub">
+                        <li><a
+                                class="section-link"
+                                data-scroll=""
+                                href="#com-init"
+                            >组件注册父与子</a></li>
+                    </ul>
+                    <li><a
+                            class="section-link"
+                            data-scroll=""
                             href="#指令"
                         >指令</a></li>
                     <ul class="menu-sub">
@@ -128,22 +157,3 @@
         </div>
     </div>
 </template>
-
-<style lang="scss" scoped>
-// 侧边菜单
-.sidebar {
-    position: fixed;
-    z-index: 10;
-    top: 61px;
-    left: 0;
-    bottom: 0;
-    border-right: 1px solid #e9e9e9;
-    overflow-x: hidden;
-    overflow-y: auto;
-
-    .sidebar-box {
-        width: 340px;
-        padding: 40px 20px 60px 60px;
-    }
-}
-</style>

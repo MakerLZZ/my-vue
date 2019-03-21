@@ -693,26 +693,26 @@ body.docs #nav {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
 }
 
-/* #mobile-bar .menu-button {
+#mobile-bar .menu-button {
   position: absolute;
   width: 24px;
   height: 24px;
   top: 8px;
   left: 12px;
-  background: url("../images/menu.png") center center no-repeat;
+  /* background: url("../images/menu.png") center center no-repeat; */
   background-size: 24px;
-} */
+}
 
-/* #mobile-bar .logo {
+#mobile-bar .logo {
   position: absolute;
   width: 30px;
   height: 30px;
-  background: url("../images/logo.png") center center no-repeat;
+  /* background: url("../../assets/img/logo.png") center center no-repeat; */
   top: 5px;
   left: 50%;
   margin-left: -15px;
   background-size: 30px;
-} */
+}
 
 @media print {
   #header {

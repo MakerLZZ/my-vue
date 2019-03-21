@@ -1,30 +1,36 @@
 <template>
-    <div class="api-home">
-        <header class="header">
-            <svg
-                class="icon"
-                aria-hidden="true"
+    <div>
+        <div id="mobile-bar">
+            <img
+                class="menu-button"
+                src="../assets/img/menu.png"
+                alt=""
+                @click="handleClickOpen"
             >
-                <use xlink:href="#el-icon-api-vue"></use>
-            </svg>
-            <span>Vue.js</span>
+            <img
+                class="logo"
+                src="../assets/img/logo.png"
+            />
+        </div>
+        <header id="header">
+            <a
+                id="logo"
+                href="/"
+            >
+                <img
+                    src="../assets/img/logo.png"
+                    alt="vue logo"
+                >
+                <span>Vue.js</span>
+            </a>
         </header>
-        <main class="main">
-            <Sidebar />
-            <Content />
-        </main>
-        <!-- 三种引用图标的方法 -->
-        <!-- <el-button
-            type="primary"
-            icon="el-icon-api-vue"
-        >主要按钮</el-button>
-        <icon class="el-icon-api-vue"></icon>
-        <svg
-            class="icon"
-            aria-hidden="true"
+        <main
+            id="main"
+            class="fix-sidebar"
         >
-            <use xlink:href="#el-icon-api-vue"></use>
-        </svg> -->
+            <Sidebar :class="sidebarClassname" />
+            <Content @handle-close-sidebar="handleClickClose" />
+        </main>
     </div>
 </template>
 
@@ -38,45 +44,22 @@ export default {
     },
     data () {
         return {
-            // msg: 'Welcome to Your Vue.js App'
+            sidebarClassname: 'sidebar' // 侧拉菜单类名
         };
+    },
+    methods: {
+        /**
+         * 处理点击打开
+         */
+        handleClickOpen() {
+            this.sidebarClassname = 'sidebar open';
+        },
+        /**
+         * 处理点击关闭
+         */
+        handleClickClose() {
+            this.sidebarClassname = 'sidebar';
+        }
     }
 };
 </script>
-
-<style lang="scss" scoped>
-.api-home {
-    height: 100%;
-    // 头部
-    .header {
-        position: fixed;
-        top: 0;
-        z-index: 100;
-        width: 100%;
-        height: 60px;
-        padding: 10px 60px;
-        line-height: 40px;
-        background-color: rgba(255, 255, 255, 0.4);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
-        transition: background-color 0.3s ease-in-out;
-
-        .icon {
-            width: 2.5em;
-            height: 2.5em;
-            vertical-align: -1em;
-            fill: currentColor;
-            overflow: hidden;
-        }
-
-        > span {
-            font-weight: 600;
-        }
-    }
-    // 主体
-    .main {
-        position: static;
-        height: 100%;
-        padding: 60px 60px 0 60px;
-    }
-}
-</style>

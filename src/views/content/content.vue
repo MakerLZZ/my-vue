@@ -2,40 +2,71 @@
     <div
         class="content api with-sidebar"
         ref="content"
+        @click="handleClickContent"
     >
-        <h1>API</h1>
-        <Project />
-        <Data />
+        <h1>API +</h1>
+        <!-- 构建项目模块 -->
+        <ContentItem :content="project" />
+        <!-- 采用公共组件（ContentItem）渲染 -->
+        <!-- <Project /> -->
+
+        <!-- data模块 -->
+        <ContentItem :content="data" />
+        <!-- 采用公共组件渲染（ContentItem） -->
+        <!-- <Data /> -->
+
+        <!-- Dom模块 -->
         <Dom />
+
+        <!-- 生命周期模块 -->
         <Lifecycle />
+
+        <!-- 组件模块 -->
+        <Com />
+
+        <!-- 指令模块 -->
         <Ins />
+
+        <!-- 路由模块 -->
         <Router />
+
+        <!-- 状态管理模块 -->
         <Vuex />
     </div>
 </template>
 
 <script>
 import './content.css';
-import Data from '../demo/data';
+// import Project from '../demo/project';
+// import Data from '../test/data';
+// import Data from '../demo/data';
 import Dom from '../demo/dom';
 import Lifecycle from '../demo/lifecycle';
+import Com from '../demo/_component';
+// import Ins from '../test/ins';
 import Ins from '../demo/ins';
 import Router from '../demo/router';
 import Vuex from '../demo/vuex';
-import Project from '../demo/project';
+
+import {projectData, datas} from '../../api/content.js';
+import ContentItem from '../../components/ContentItem';
 export default {
     components: {
-        Data,
+        // Project,
+        // Data,
         Dom,
         Lifecycle,
         Ins,
         Router,
         Vuex,
-        Project
+        ContentItem,
+        Com
     },
     data() {
         return {
-            scrollTop: 0
+            scrollTop: 0,
+            project: projectData,
+            data: datas
         };
     },
     mounted() {
@@ -50,7 +81,6 @@ export default {
          */
         handleScroll() {
             this.scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-            
             // console.log(document.documentElement);
         },
         /**
@@ -59,6 +89,12 @@ export default {
         // setAnchorStyle() {
 
         // }
+        /**
+         * 处理点击内容
+         */
+        handleClickContent() {
+            this.$emit('handle-close-sidebar');
+        }
 
     }
 };
@@ -72,23 +108,5 @@ h4,
 strong {
     font-weight: 600;
     color: #2c3e50;
-}
-// 中间内容
-.content {
-    position: relative;
-    max-width: 680px;
-    height: 600px;
-    margin: 0 auto;
-    padding: 2.2em 0;
-    padding-left: 50px;
-
-    > h1 {
-        margin: 0 0 1em;
-    }
-
-    .test {
-        height: 500px;
-        background: #f1f1f1;
-    }
 }
 </style>
