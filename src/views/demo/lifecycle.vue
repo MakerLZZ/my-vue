@@ -68,7 +68,7 @@
             </li>
             <li>
                 <p><strong>结果：</strong></p>
-                <p><img src="../../assets/img/demo/life-c-m.png"></p>
+                <p><img src="../../assets/images/demo/life-c-m.png"></p>
             </li>
             <li>
                 <p><strong>分析：</strong></p>
@@ -110,7 +110,7 @@
             </li>
             <li>
                 <p><strong>结果：</strong></p>
-                <p><img src="../../assets/img/demo/life-u.png"></p>
+                <p><img src="../../assets/images/demo/life-u.png"></p>
             </li>
             <li>
                 <p><strong>分析：</strong></p>
@@ -151,7 +151,7 @@
             </li>
             <li>
                 <p><strong>结果：</strong></p>
-                <p><img src="../../assets/img/demo/life-d.png"></p>
+                <p><img src="../../assets/images/demo/life-d.png"></p>
             </li>
             <li>
                 <p><strong>分析：</strong></p>

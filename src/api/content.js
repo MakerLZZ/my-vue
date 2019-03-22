@@ -1,4 +1,4 @@
-import projectDetail from '../assets/img/demo/project-detail.png';
+import projectDetail from '../assets/images/demo/project-detail.png';
 // 项目搭建模块数据
 const projectData = {
     h2Id: '项目搭建',

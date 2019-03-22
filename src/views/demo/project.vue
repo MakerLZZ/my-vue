@@ -74,7 +74,7 @@
             <li>
                 <p><strong>项目目录结构概览：</strong></p>
                 <p><img
-                        src="../../assets/img/demo/project-detail.png"
+                        src="../../assets/images/demo/project-detail.png"
                         alt=""
                     ></p>
             </li>
