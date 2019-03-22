@@ -36,20 +36,20 @@
 </template>
 
 <script>
-import './content.css';
+import '../assets/css/content.css';
 // import Project from '../demo/project';
 // import Data from '../test/data';
 // import Data from '../demo/data';
-import Dom from '../demo/dom';
-import Lifecycle from '../demo/lifecycle';
-import Com from '../demo/_component';
+import Dom from './demo/dom';
+import Lifecycle from './demo/lifecycle';
+import Com from './demo/_component';
 // import Ins from '../test/ins';
-import Ins from '../demo/ins';
-import Router from '../demo/router';
-import Vuex from '../demo/vuex';
+import Ins from './demo/ins';
+import Router from './demo/router';
+import Vuex from './demo/vuex';
 
-import {projectData, datas} from '../../api/content.js';
-import ContentItem from '../../components/ContentItem';
+import {projectData, datas} from '../api/content.js';
+import ContentItem from '../components/ContentItem';
 export default {
     components: {
         // Project,

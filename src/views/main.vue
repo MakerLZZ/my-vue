@@ -3,13 +3,13 @@
         <div id="mobile-bar">
             <img
                 class="menu-button"
-                src="../assets/img/menu.png"
+                src="../assets/images/menu.png"
                 alt=""
                 @click="handleClickOpen"
             >
             <img
                 class="logo"
-                src="../assets/img/logo.png"
+                src="../assets/images/logo.png"
             />
         </div>
         <header id="header">
@@ -18,7 +18,7 @@
                 href="/"
             >
                 <img
-                    src="../assets/img/logo.png"
+                    src="../assets/images/logo.png"
                     alt="vue logo"
                 >
                 <span>Vue.js</span>
@@ -36,7 +36,7 @@
 
 <script>
 import Sidebar from './sidebar';
-import Content from '_v/content/content';
+import Content from './content';
 export default {
     components: {
         Sidebar,
