@@ -47,8 +47,9 @@ export default {
             let keyArr = Object.keys(item);
             keyArr.splice(0 ,1); // 去除第一个参数（类型）
             let strArr = '';
-            for (let i = 0; i < keyArr.length; i++) {
-                for (let j = 0; j < keyArr.length; j++) {
+            let keyArrLen = keyArr.length;
+            for (let i = 0; i < keyArrLen; i++) {
+                for (let j = 0; j < keyArrLen; j++) {
                     if (item[keyArr[j]].sort === i) {
                         strArr += this.addTagToStr(keyArr[j], item[keyArr[j]]);
                     }
